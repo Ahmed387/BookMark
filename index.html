@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Bookmark</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./CSS/all.min.css" />
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="./CSS/bookmark.css" />
+  </head>
+  <body>
+    <h1 class="text-center">Bookmark</h1>
+    <input
+      type="text"
+      oninput="validate(this)"
+      class="form-control mt-5"
+      placeholder="Bookmark"
+      id="sitename"
+    />
+
+    <input
+      type="text"
+      oninput="validate(this)"
+      class="form-control mt-5"
+      placeholder="Bookmark"
+      id="urlname"
+    />
+    <h2 id="warn" class="d-none lead text-danger m-5">
+      please enter correct url and bookmark-name
+    </h2>
+
+    <button class="btn btn-info text-white m-5 d-block" id="BUTT">Add</button>
+
+    <button
+      class="btn btn-warning text-white m-5 d-none"
+      id="BUTT1"
+      onclick="FUpgrade()"
+    >
+      Upgrade
+    </button>
+    <input
+      type="text"
+      class="form-control mt-5"
+      placeholder="search..."
+      id="inputsearch"
+    />
+
+    <table class="table text-center mt-4">
+      <thead>
+        <th>index</th>
+        <th>name</th>
+        <th>visite</th>
+        <th>update</th>
+        <th>Delete</th>
+      </thead>
+      <tbody id="row"></tbody>
+    </table>
+
+    <script src="./JS/all.min.js"></script>
+    <script src="./JS/bookmark.js"></script>
+  </body>
+</html>
